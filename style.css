@@ -2,6 +2,7 @@
     font-family: 'Nunito Sans';
 }
 
+
 header {
     background-color: #03Dac6;
     text-align: center;
@@ -57,8 +58,44 @@ li a {
     font-weight: 600;
     font-size: 20px;
     color: #5C5C5C;
+    transition: 0.2s ease;
 }
 
 li a:hover {
     color: #03Dac6;
+}
+
+@media only screen and (max-width: 932px){
+    body {
+        height: 100vh;
+        background-color: #121212;
+    }
+
+    header {
+        padding: 5px;
+    }
+
+    .flex-container {
+        justify-content: center;
+    }
+
+
+    .flex-container ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .column .li-youtube{
+        margin-top: 0px;
+    }
+
+    li {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 5px 32px 5px 32px;
+        padding: 19px 0;
+        margin: 16px 0;
+        width: 220px; 
+    }
 }
